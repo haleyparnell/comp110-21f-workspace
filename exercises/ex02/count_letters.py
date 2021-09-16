@@ -10,7 +10,6 @@ i: int = 0
 while i < len(search_letter):
     if len(search_letter) > 0:
         i = user_word.count(search_letter)
-    else:
-        print("Count: 0")
-
+   
+   
 print("Count:", i)
