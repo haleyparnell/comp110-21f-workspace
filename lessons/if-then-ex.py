@@ -1,4 +1,4 @@
-"""Practice with if-then-else statements!"""
+"""Practice with if-then-else statements."""
 __author__ = "730514769"
 
 choice: int = int(input("Enter a number: "))

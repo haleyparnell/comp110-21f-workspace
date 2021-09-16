@@ -5,15 +5,12 @@ __author__ = "730514769"
 search_letter: str = input("What letter do you want to search for?: ")
 user_word: str = input("Enter a word: ")
 
-word = user_word
-character = search_letter
+i: int = 0
 
-counter = 0
-
-while character in word:
-    if character in word is True:
-        counter = 0 + 1
+while i < len(search_letter):
+    if len(search_letter) > 0:
+        i = user_word.count(search_letter)
     else:
-        counter = 0
+        print("Count: 0")
 
-print("Count:", counter)
+print("Count:", i)
