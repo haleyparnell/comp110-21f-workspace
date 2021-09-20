@@ -1,6 +1,18 @@
 """Repeating a beat in a loop."""
 
-__author__ = "ENTER YOUR 9-DIGIT PID HERE"
+__author__ = "730514769"
 
+beat_name: str = input("What beat do you want to repeat? ")
+beat_times: str = input("How many times do you want to repeat it? ")
+choice = int(beat_times) 
 
-# Begin your solution here...
+a: str = ""
+
+if choice <= 0:
+    print("No beat...")
+else:
+    while choice > 0:
+        a = a + beat_name + ' '
+        choice = choice - 1
+
+    print(a)

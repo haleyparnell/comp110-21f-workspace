@@ -1,5 +1,4 @@
-# TODO: Write docstring here
-
-# TODO: Initialize __author__ variable here
-
-# TODO: Implement your program logic here
+name: str = input("What is your name? ")
+print("Yeah, that's right " + name + ", you are swag.")
+print(name + " is so cool.")
+print("I hope you have a fantastic day " + name + "!")
