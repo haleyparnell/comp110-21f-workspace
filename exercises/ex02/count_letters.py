@@ -1,6 +1,15 @@
 """Counting letters in a string."""
 
-__author__ = "ENTER YOUR 9-DIGIT PID HERE"
+__author__ = "730514769"
 
+search_letter: str = input("What letter do you want to search for?: ")
+user_word: str = input("Enter a word: ")
 
-# Begin your solution here...
+i: int = 0
+
+while i < len(search_letter):
+    if len(search_letter) > 0:
+        i = user_word.count(search_letter)
+   
+   
+print("Count:", i)

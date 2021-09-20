@@ -1,3 +1,7 @@
+"""ex01 relational_operators!"""
+
+__author__ = "730514769"
+
 left_input: str = input("Left-hand side: ")
 right_input: str = input("Right-hand side: ")
 a = int(left_input)
