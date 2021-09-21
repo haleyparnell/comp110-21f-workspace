@@ -11,5 +11,4 @@ while i < len(search_letter):
     if len(search_letter) > 0:
         i = user_word.count(search_letter)
    
-   
 print("Count:", i)
