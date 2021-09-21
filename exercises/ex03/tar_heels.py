@@ -14,4 +14,5 @@ else:
         if user_integer % 7 == 0:
             print("HEELS")
         else:
-            print("Carolina")
+            if (user_integer % 2 != 0) and (user_integer % 7 != 0):
+                print("Carolina")
