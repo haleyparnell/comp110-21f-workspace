@@ -12,7 +12,7 @@ if choice <= 0:
     print("No beat...")
 else:
     while choice > 0:
-        a = beat_name + " " + a
+        a = beat_name + a
         choice = choice - 1
 
     print(a)
