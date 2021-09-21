@@ -15,4 +15,4 @@ else:
             print("HEELS")
         else:
             if (user_integer % 2 != 0) and (user_integer % 7 != 0):
-                print("Carolina")
+                print("CAROLINA")
