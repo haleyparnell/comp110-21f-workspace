@@ -8,7 +8,7 @@ points: int = 0
 player: str = ""
 
 # Lists
-majors: list[str] = ["Computer Science", "Biology"]
+majors: list[str] = ["-Computer Science", "-Biology", "-English"]
 comp_classes: list[str] = ["COMP-110", "COMP-283", "MATH-231", "COMP-210"]
 biol_classes: list[str] = ["BIOL-101", "CHEM-101", "PHYS-114", "BIOL-201"]
 engl_classes: list[str] = ["ENGL-120", "ENGL-124", "ENGL-225", "ENGL-235"]
@@ -32,7 +32,13 @@ def main() -> None:
     global player
     global points
     greet()
-    major_choice = str(input("What is your major? Type either 'Computer Science' or 'Biology' or 'English' "))
+    print("What is your major?")
+    i = 0
+    while i < len(majors):
+        print(majors[i])
+        i = i + 1
+
+    major_choice = str(input("Type either 'Computer Science' 'Biology' or 'English' "))
     print(f"The major you have selected is {major_choice}.")
     if major_choice == "Computer Science":
         print(f"{player}, you're a Computer Science {COMPUTER}  major at UNC trying to register for the upcoming semester.")
@@ -54,26 +60,28 @@ def main() -> None:
         coin_comp110face: int = int(randint(1, 2))
         if coin_comp110face == 1:
             print("Your coin landed on heads!")
-            if coin_comp110guess < 2:
+            if coin_comp110guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_comp110face == 2:
                 print("Your coin landed on tails!")
-                if coin_comp110guess > 1:
+                if coin_comp110guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
-        
+    
         print("The second class you try to register for is COMP-283!")
         print((f"You flip a coin {COIN}. Heads or tails, what is your guess?"))
         i = 0
@@ -86,22 +94,24 @@ def main() -> None:
         coin_comp283face: int = int(randint(1, 2))
         if coin_comp283face == 1:
             print("Your coin landed on heads!")
-            if coin_comp283guess < 2:
+            if coin_comp283guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_comp283face == 2:
                 print("Your coin landed on tails!")
-                if coin_comp283guess > 1:
+                if coin_comp283guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
@@ -118,22 +128,24 @@ def main() -> None:
         coin_math231face: int = int(randint(1, 2))
         if coin_math231face == 1:
             print("Your coin landed on heads!")
-            if coin_math231guess < 2:
+            if coin_math231guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_math231face == 2:
                 print("Your coin landed on tails!")
-                if coin_math231guess > 1:
+                if coin_math231guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
@@ -150,25 +162,28 @@ def main() -> None:
         coin_comp210face: int = int(randint(1, 2))
         if coin_comp210face == 1:
             print("Your coin landed on heads!")
-            if coin_comp210guess < 2:
+            if coin_comp210guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_comp210face == 2:
                 print("Your coin landed on tails!")
-                if coin_comp210guess > 1:
+                if coin_comp210guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
+
     if major_choice == "Biology":
         print(f"{player}, you're a Biology {PLANT} major at UNC trying to register for the upcoming semester.")
         print("These are all of the courses you're trying to take:")
@@ -189,22 +204,24 @@ def main() -> None:
         coin_biol101face: int = int(randint(1, 2))
         if coin_biol101face == 1:
             print("Your coin landed on heads!")
-            if coin_biol101guess < 2:
+            if coin_biol101guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_biol101face == 2:
                 print("Your coin landed on tails!")
-                if coin_biol101guess > 1:
+                if coin_biol101guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
@@ -221,22 +238,24 @@ def main() -> None:
         coin_chem101face: int = int(randint(1, 2))
         if coin_chem101face == 1:
             print("Your coin landed on heads!")
-            if coin_chem101guess < 2:
+            if coin_chem101guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_chem101face == 2:
                 print("Your coin landed on tails!")
-                if coin_chem101guess > 1:
+                if coin_chem101guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
@@ -253,22 +272,24 @@ def main() -> None:
         coin_phys114face: int = int(randint(1, 2))
         if coin_phys114face == 1:
             print("Your coin landed on heads!")
-            if coin_phys114guess < 2:
+            if coin_phys114guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_phys114face == 2:
                 print("Your coin landed on tails!")
-                if coin_phys114guess > 1:
+                if coin_phys114guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
@@ -285,25 +306,28 @@ def main() -> None:
         coin_biol201face: int = int(randint(1, 2))
         if coin_biol201face == 1:
             print("Your coin landed on heads!")
-            if coin_biol201guess < 2:
+            if coin_biol201guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_biol201face == 2:
                 print("Your coin landed on tails!")
-                if coin_biol201guess > 1:
+                if coin_biol201guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
+    
     if major_choice == "English":
         print(f"{player}, you are an English {BOOKS} major at UNC trying to register for the upcoming semester.")
         print("These are all of the courses you're trying to take:")
@@ -324,22 +348,24 @@ def main() -> None:
         coin_engl120face: int = int(randint(1, 2))
         if coin_engl120face == 1:
             print("Your coin landed on heads!")
-            if coin_engl120guess < 2:
+            if coin_engl120guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_engl120face == 2:
                 print("Your coin landed on tails!")
-                if coin_engl120guess > 1:
+                if coin_engl120guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
@@ -356,22 +382,24 @@ def main() -> None:
         coin_engl124face: int = int(randint(1, 2))
         if coin_engl124face == 1:
             print("Your coin landed on heads!")
-            if coin_engl124guess < 2:
+            if coin_engl124guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_engl124face == 2:
                 print("Your coin landed on tails!")
-                if coin_engl124guess > 1:
+                if coin_engl124guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
@@ -388,22 +416,24 @@ def main() -> None:
         coin_engl225face: int = int(randint(1, 2))
         if coin_engl225face == 1:
             print("Your coin landed on heads!")
-            if coin_engl225guess < 2:
+            if coin_engl225guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_engl225face == 2:
                 print("Your coin landed on tails!")
-                if coin_engl225guess > 1:
+                if coin_engl225guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
@@ -420,22 +450,24 @@ def main() -> None:
         coin_engl235face: int = int(randint(1, 2))
         if coin_engl235face == 1:
             print("Your coin landed on heads!")
-            if coin_engl235guess < 2:
+            if coin_engl235guess == 1:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
             else:
+                print("The website froze...")
                 print(f"The class is full {CROSSMARK}.")
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
             if coin_engl235face == 2:
                 print("Your coin landed on tails!")
-                if coin_engl235guess > 1:
+                if coin_engl235guess == 2:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
                 else:
+                    print("The website froze...")
                     print(f"The class is full {CROSSMARK}.")
                     points = points + 0
                     print(f"Adventure points: {points}")
