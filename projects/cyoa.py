@@ -4,7 +4,7 @@
 __author__ = "730514769"
 from random import randint
 
-points = 0
+points: int = 0
 player: str = ""
 
 # Lists
