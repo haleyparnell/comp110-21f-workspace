@@ -49,12 +49,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
 
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_comp110guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_comp110guess}.")
+        coin_comp110face: int = int(randint(1, 2))
+        if coin_comp110face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_comp110guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -63,9 +63,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_comp110face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_comp110guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
@@ -81,12 +81,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
 
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_comp283guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_comp283guess}.")
+        coin_comp283face: int = int(randint(1, 2))
+        if coin_comp283face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_comp283guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -95,9 +95,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_comp283face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_comp283guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
@@ -113,12 +113,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
 
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_math231guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_math231guess}.")
+        coin_math231face: int = int(randint(1, 2))
+        if coin_math231face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_math231guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -127,9 +127,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_math231face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_math231guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
@@ -145,12 +145,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
             
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_comp210guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_comp210guess}.")
+        coin_comp210face: int = int(randint(1, 2))
+        if coin_comp210face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_comp210guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -159,9 +159,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_comp210face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_comp210guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
@@ -184,12 +184,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
 
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_biol101guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_biol101guess}.")
+        coin_biol101face: int = int(randint(1, 2))
+        if coin_biol101face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_biol101guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -198,9 +198,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_biol101face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_biol101guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
@@ -216,12 +216,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
 
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_chem101guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_chem101guess}.")
+        coin_chem101face: int = int(randint(1, 2))
+        if coin_chem101face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_chem101guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -230,9 +230,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_chem101face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_chem101guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
@@ -248,12 +248,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
 
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_phys114guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_phys114guess}.")
+        coin_phys114face: int = int(randint(1, 2))
+        if coin_phys114face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_phys114guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -262,9 +262,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_phys114face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_phys114guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
@@ -280,12 +280,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
             
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_biol201guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_biol201guess}.")
+        coin_biol201face: int = int(randint(1, 2))
+        if coin_biol201face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_biol201guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -294,9 +294,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_biol201face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_biol201guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
@@ -319,12 +319,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
 
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_engl120guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_engl120guess}.")
+        coin_engl120face: int = int(randint(1, 2))
+        if coin_engl120face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_engl120guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -333,9 +333,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_engl120face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_engl120guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
@@ -351,12 +351,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
 
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_engl124guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_engl124guess}.")
+        coin_engl124face: int = int(randint(1, 2))
+        if coin_engl124face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_engl124guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -365,9 +365,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_engl124face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_engl124guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
@@ -383,12 +383,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
 
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_engl225guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_engl225guess}.")
+        coin_engl225face: int = int(randint(1, 2))
+        if coin_engl225face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_engl225guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -397,9 +397,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_engl225face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_engl225guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
@@ -415,12 +415,12 @@ def main() -> None:
             print(coin_list[i])
             i = i + 1
             
-        coin_guess: int = int(input("Type the number 1 or 2: "))
-        print(f"You selected {coin_guess}.")
-        coin_face: int = int(randint(1, 2))
-        if coin_face == 1:
+        coin_engl235guess: int = int(input("Type the number 1 or 2: "))
+        print(f"You selected {coin_engl235guess}.")
+        coin_engl235face: int = int(randint(1, 2))
+        if coin_engl235face == 1:
             print("Your coin landed on heads!")
-            if coin_guess < 2:
+            if coin_engl235guess < 2:
                 print(f"You have been enrolled in the class {CHECKMARK}.")
                 points = points + 25
                 print(f"Adventure points: {points}")
@@ -429,9 +429,9 @@ def main() -> None:
                 points = points + 0
                 print(f"Adventure points: {points}")
         else:
-            if coin_face == 2:
+            if coin_engl235face == 2:
                 print("Your coin landed on tails!")
-                if coin_guess > 1:
+                if coin_engl235guess > 1:
                     print(f"You have been enrolled in the class {CHECKMARK}.")
                     points = points + 25
                     print(f"Adventure points: {points}")
