@@ -477,7 +477,7 @@ def main() -> None:
 def greet() -> None:
     """Greet procedure and welcome message."""
     print(f"Welcome to UNC's new class registration system called Coin Flip! {COOLFACE}")
-    print("To enroll in a class, you must land on heads during your coin flip.")
+    print("To enroll in a class, you must correctly guess heads or tails.")
     print("Everytime you enroll in a class, you gain points. Get into all of your classes to win!")
     global player
     player = (input("But before we get started, what is your name? "))
