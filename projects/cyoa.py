@@ -117,7 +117,7 @@ def main() -> None:
                     print(f"Adventure points: {points}")
 
         print("The third class you try to register for is MATH-231!")
-        print(("You flip a coin {COIN}. Heads or tails, what is your guess?"))
+        print((f"You flip a coin {COIN}. Heads or tails, what is your guess?"))
         i = 0
         while i < len(coin_list):
             print(coin_list[i])
@@ -151,7 +151,7 @@ def main() -> None:
                     print(f"Adventure points: {points}")
 
         print("The final class you try to register for is COMP-210!")
-        print(("You flip a coin {COIN}. Heads or tails, what is your guess?"))
+        print(f"You flip a coin {COIN}. Heads or tails, what is your guess?")
         i = 0
         while i < len(coin_list):
             print(coin_list[i])
@@ -227,7 +227,7 @@ def main() -> None:
                     print(f"Adventure points: {points}")
         
         print("The second class you try to register for is CHEM-101!")
-        print((f"You flip a coin {COIN}. Heads or tails, what is your guess?"))
+        print(f"You flip a coin {COIN}. Heads or tails, what is your guess?")
         i = 0
         while i < len(coin_list):
             print(coin_list[i])
@@ -261,7 +261,7 @@ def main() -> None:
                     print(f"Adventure points: {points}")
 
         print("The third class you try to register for is PHYS-114!")
-        print(("You flip a coin {COIN}. Heads or tails, what is your guess?"))
+        print(f"You flip a coin {COIN}. Heads or tails, what is your guess?")
         i = 0
         while i < len(coin_list):
             print(coin_list[i])
@@ -295,7 +295,7 @@ def main() -> None:
                     print(f"Adventure points: {points}")
 
         print("The final class you try to register for is BIOL-201!")
-        print(("You flip a coin {COIN}. Heads or tails, what is your guess?"))
+        print(f"You flip a coin {COIN}. Heads or tails, what is your guess?")
         i = 0
         while i < len(coin_list):
             print(coin_list[i])
@@ -405,7 +405,7 @@ def main() -> None:
                     print(f"Adventure points: {points}")
 
         print("The third class you try to register for is ENGl-225!")
-        print(("You flip a coin {COIN}. Heads or tails, what is your guess?"))
+        print(f"You flip a coin {COIN}. Heads or tails, what is your guess?")
         i = 0
         while i < len(coin_list):
             print(coin_list[i])
@@ -439,7 +439,7 @@ def main() -> None:
                     print(f"Adventure points: {points}")
 
         print("The final class you try to register for is ENGL-235!")
-        print(("You flip a coin {COIN}. Heads or tails, what is your guess?"))
+        print(f"You flip a coin {COIN}. Heads or tails, what is your guess?")
         i = 0
         while i < len(coin_list):
             print(coin_list[i])
