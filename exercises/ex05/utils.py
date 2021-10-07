@@ -15,3 +15,17 @@ def only_evens(list_1: list[int]) -> list[int]:
             i += 1
     
     return list_2
+
+
+def sub(a_list: list[int], user_int_1: int, user_int_2: int) -> list[int]:
+    final_list = []
+    start, end = user_int_1, user_int_2
+    if start < end:
+        a_list.extend(range(start, end))
+        a_list.append(end)
+    
+    return final_list
+
+
+def concat(first_list: list[int], second_list: list[int]) -> list[int]:
+    return first_list + second_list
