@@ -15,7 +15,9 @@ def all(user_list: list[int], user_int: int) -> bool:
         while user_list[i] > 0:
             if user_list[i] == user_int:
                 i += 1
-        return True
+                return True
+            else: 
+                return False
     else:
         return False
 
@@ -26,16 +28,11 @@ def is_equal(list_1: list[int], list_2: list[int]) -> bool:
     x: int = 0
     total_1: int = 0
     total_2: int = 0
-    empty: list[int] = []
-    if list_1 and list_2 is empty:
-        return True
     while i < len(list_1):
-        list_1.sort()
         total_1 += list_1[i]
         i += 1
     
     while i < len(list_2):
-        list_2.sort
         total_2 += list_2[x]
         x += 1
 
@@ -46,7 +43,7 @@ def is_equal(list_1: list[int], list_2: list[int]) -> bool:
 
 
 def max(input: list[int]) -> int:
-    """Given a list of ints, return the largest int in the list."""
+    """Given a list of ints, return the largest in the list."""
     if len(input) == 0:
         raise ValueError("max)) arg is an empty List")
     else:
