@@ -1,21 +1,25 @@
-"""Utility functions."""
+"""Some helpful utility functions for working with CSV files."""
 
-__author__ = "730514769"
-
-# Define your functions below
 from csv import DictReader
-
-from tabulate import tabulate
 
 
 def read_csv_rows(filename: str) -> list[dict[str, str]]:
     """Read the rows of a CSV into a 'table'."""
     result: list[dict[str, str]] = []
+    
+    # Open a handle to the data file
     file_handle = open(filename, "r", encoding="utf8")
+    
+    # Prepare to read the data file as a CSV rather than just strings
     csv_reader = DictReader(file_handle)
+
+    # Read each row of the CSV line-by-line
     for row in csv_reader:
         result.append(row)
+
+    # Close the file when we're done, to free its resources
     file_handle.close()
+
     return result
 
 
@@ -36,27 +40,4 @@ def columnar(row_table: list[dict[str, str]]) -> dict[str, list[str]]:
     for column in first_row:
         result[column] = column_values(row_table, column)
         
-    return result
-
-
-def head(column_table: dict[str, list[str]], n: int) -> dict[str, list[str]]:
-    """Produce a new column-based 'table' with only the first N rows of data for each column."""
-    result: dict[str, list[str]] = {}
-    i: int = 0
-    
-    # TODO
-    return result
-
-
-def select(column: dict[str, list[str]], name: list[str]) -> dict[str, list[str]]:
-    """Produce a new column-based 'table' with only a specific subset of the original columns."""
-    result: dict[str, list[str]] = {}
-    # TODO
-    return result
-
-
-def concat(dict_one: dict[str, list[str]], dict_two: dict[str, list[str]]) -> dict[str, list[str]]:
-    """Produce a new column-based 'table' with two-columns based tables combined."""
-    result: dict[str, list[str]] = {}
-    # TODO
     return result
