@@ -5,7 +5,9 @@ __author__ = "730514769"
 # Define your functions below
 from csv import DictReader
 
-from tabulate import tabulate
+from tabulate import DataRow, tabulate
+
+import pandas as pd
 
 
 def read_csv_rows(filename: str) -> list[dict[str, str]]:
@@ -41,11 +43,8 @@ def columnar(row_table: list[dict[str, str]]) -> dict[str, list[str]]:
 
 def head(column_table: dict[str, list[str]], n: int) -> dict[str, list[str]]:
     """Produce a new column-based 'table' with only the first N rows of data for each column."""
-    result: dict[str, list[str]] = {}
-    i: int = 0
-    
     # TODO
-    return result
+
 
 
 def select(column: dict[str, list[str]], name: list[str]) -> dict[str, list[str]]:
