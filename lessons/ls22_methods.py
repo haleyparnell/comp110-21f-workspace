@@ -1,6 +1,6 @@
-"""Example of a Point class."""
-from __future__ import annotations
 
+
+from __future__ import annotations
 
 class Point:
     x: float
@@ -30,13 +30,3 @@ class Point:
     def __repr__(self) -> str:
         """Produce a str representation of a Point for Python!"""
         return f"Point({self.x}, {self.y})"
-
-
-p0: Point = Point(1.0, 2.0)
-p1: Point = p0.scale(2.0)
-print(p0)
-p1_as_a_str: str = str(p1)
-print(p1_as_a_str)
-
-p1_repr: str = repr(p1)
-print(p1_repr)
