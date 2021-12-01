@@ -56,22 +56,19 @@ def head(column_table: dict[str, list[str]], n: int) -> dict[str, list[str]]:
 def select(column: dict[str, list[str]], name: list[str]) -> dict[str, list[str]]:
     """Produce a new column-based 'table' with only a specific subset of the original columns."""
     result: dict[str, list[str]] = {}
-    for each_column in column:
-        test: list[str] = []
-        i: int = 0
-        while i <= len(column):
-            if each_column == name[i]:
-                test.append(name[i])
-                i += 1
-            else:
-                result[each_column] = test
-                result[each_column] = test
+    i: int = 0
+    test: list[str] = []
+    for each_column in name:
+        result[each_column] = name
+        while i < len(column):
+            test.append(column[each_column][i])
+            i += 1
+            result[each_column] = test
+
     return result
-        
 
 
 def concat(dict_one: dict[str, list[str]], dict_two: dict[str, list[str]]) -> dict[str, list[str]]:
     """Produce a new column-based 'table' with two-columns based tables combined."""
     result: dict[str, list[str]] = {}
-    # TODO
     return result
